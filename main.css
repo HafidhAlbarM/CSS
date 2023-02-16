@@ -1,12 +1,17 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Monstserrat", sans-serif;
+  margin: 0;
 }
 
 #product-overview {
-  background: #ff1b68;
-  padding: 20px;
-  border: 5px black solid;
-  margin: 20px;
+  background: url("freedom.jpg");
+  width: 100%;
+  height: 528px;
+  padding: 10px;
 }
 
 #product-overview h1 {
@@ -15,9 +20,160 @@ body {
 }
 
 .section-title {
-  color: #2ddf5b;
+  color: #07ca07;
+  text-align: center;
 }
 
-h1 {
+.plan {
+  background-color: #80f09e;
+  text-align: center;
+  padding: 16px;
+  margin: 8px;
+  display: inline-block;
+  width: 30%;
+  vertical-align: middle;
+}
+
+.plan--highlighted {
+  background-color: #07962d;
+  color: #fff;
+  box-shadow: 2px 2px 2px 2px rgb(0, 0, 0, 0.5);
+}
+
+.plan__annotation {
+  background-color: #fff;
+  color: #07962d;
+  padding: 5px;
+  box-shadow: 2px 2px 2px 2px rgb(0, 0, 0, 0.5);
+  border-radius: 8px;
+}
+
+.plan__title {
+  color: #0a3b17;
+}
+
+.plan__price {
+  color: #5a5959;
+}
+
+.plan--highlighted .plan__title {
+  color: white;
+}
+
+.plan--highlighted .plan__price {
+  color: #0a3b17;
+}
+
+.plan_features {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.plan_feature {
+  margin: 8px 0;
+}
+
+.button {
+  background-color: #0a3b17;
+  color: #fff;
+  font: inherit;
+  border: 1.5px solid #0a3b17;
+  padding: 8px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.button:hover,
+.button:active {
+  color: #0a3b17;
+  background-color: #fff;
+}
+
+#key-features {
+  background-color: #ff1b68;
+  margin-top: 80px;
+  padding: 16px;
+}
+
+#key-features .section-title {
+  color: #fff;
+  margin: 32px;
+}
+
+/* h1 {
   font-family: sans-serif;
+} */
+
+.main-header {
+  background-color: #80f09e;
+  padding: 8px 16px;
+  width: 100%;
+}
+
+/* bikin logo navbar jadi inline block dengan menu navbar*/
+.main-header > div {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.main-header___brand {
+  text-decoration: none;
+  color: #0e4f1f;
+  font-weight: bold; /* harus import size bold dari Monserrat */
+  font-size: 22px;
+}
+
+/* bikin menu navbar jadi inline block dengan logo navbar */
+.main-nav {
+  display: inline-block;
+  text-align: right;
+  width: calc(
+    100% - 72px
+  ); /* 52 di dapat dari ukuran div logo (inspect element, kliik div di kodingan inspectnya, lalu akan muncul sizenya di tampilan webnya) */
+  vertical-align: middle;
+}
+
+.main-nav___items {
+  margin: 0;
+  padding: 0;
+  list-style: none; /*remove bullets point */
+}
+/* bikin menu list items navbar jadi inline block */
+
+.main-nav___item {
+  display: inline-block;
+  margin: 0 16px;
+}
+
+.main-nav___item a {
+  text-decoration: none;
+  color: #0e4f1f;
+  font-weight: bold;
+  padding: 3px 0;
+}
+
+.main-nav___item a:hover,
+.main-nav___item a:active {
+  color: white;
+  border-bottom: 5px solid white;
+}
+
+.main-nav___item a.test {
+  color: blue;
+}
+
+.main-nav--cta a {
+  color: white;
+  background: #ff1b68;
+  padding: 8px 16px;
+  border-radius: 8px;
+}
+
+.main-nav--cta a:hover,
+.main-nav--cta a:active {
+  color: #ff1b68;
+  background: white;
+  border: none;
 }

@@ -1,12 +1,3 @@
-* {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "Monstserrat", sans-serif;
-  margin: 0;
-}
-
 #product-overview {
   background: url("freedom.jpg");
   width: 100%;
@@ -21,6 +12,12 @@ body {
 
 .section-title {
   color: #07ca07;
+  text-align: center;
+}
+
+.plan__list {
+  width: 80%;
+  margin: auto;
   text-align: center;
 }
 
@@ -74,23 +71,6 @@ body {
   margin: 8px 0;
 }
 
-.button {
-  background-color: #0a3b17;
-  color: #fff;
-  font: inherit;
-  border: 1.5px solid #0a3b17;
-  padding: 8px;
-  border-radius: 8px;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-.button:hover,
-.button:active {
-  color: #0a3b17;
-  background-color: #fff;
-}
-
 #key-features {
   background-color: #ff1b68;
   margin-top: 80px;
@@ -102,78 +82,35 @@ body {
   margin: 32px;
 }
 
+.key-feature__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.key-feature {
+  display: inline-block;
+  width: 33%;
+  vertical-align: top;
+}
+
+.key-feature__description {
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  font-size: 20px;
+}
+
+.key-feature__image {
+  background-color: #ffcede;
+  width: 128px;
+  height: 128px;
+  border: 2px solid #424242;
+  border-radius: 50%;
+  margin: auto;
+}
+
 /* h1 {
   font-family: sans-serif;
 } */
-
-.main-header {
-  background-color: #80f09e;
-  padding: 8px 16px;
-  width: 100%;
-}
-
-/* bikin logo navbar jadi inline block dengan menu navbar*/
-.main-header > div {
-  display: inline-block;
-  vertical-align: middle;
-}
-
-.main-header___brand {
-  text-decoration: none;
-  color: #0e4f1f;
-  font-weight: bold; /* harus import size bold dari Monserrat */
-  font-size: 22px;
-}
-
-/* bikin menu navbar jadi inline block dengan logo navbar */
-.main-nav {
-  display: inline-block;
-  text-align: right;
-  width: calc(
-    100% - 72px
-  ); /* 52 di dapat dari ukuran div logo (inspect element, kliik div di kodingan inspectnya, lalu akan muncul sizenya di tampilan webnya) */
-  vertical-align: middle;
-}
-
-.main-nav___items {
-  margin: 0;
-  padding: 0;
-  list-style: none; /*remove bullets point */
-}
-/* bikin menu list items navbar jadi inline block */
-
-.main-nav___item {
-  display: inline-block;
-  margin: 0 16px;
-}
-
-.main-nav___item a {
-  text-decoration: none;
-  color: #0e4f1f;
-  font-weight: bold;
-  padding: 3px 0;
-}
-
-.main-nav___item a:hover,
-.main-nav___item a:active {
-  color: white;
-  border-bottom: 5px solid white;
-}
-
-.main-nav___item a.test {
-  color: blue;
-}
-
-.main-nav--cta a {
-  color: white;
-  background: #ff1b68;
-  padding: 8px 16px;
-  border-radius: 8px;
-}
-
-.main-nav--cta a:hover,
-.main-nav--cta a:active {
-  color: #ff1b68;
-  background: white;
-  border: none;
-}

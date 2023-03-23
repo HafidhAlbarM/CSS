@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Monstserrat", sans-serif;
+  margin: 0;
+}
+
+.main-header {
+  background-color: #80f09e;
+  padding: 8px 16px;
+  width: 100%;
+}
+
+/* bikin logo navbar jadi inline block dengan menu navbar*/
+.main-header > div {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.main-header___brand {
+  text-decoration: none;
+  color: #0e4f1f;
+  font-weight: bold; /* harus import size bold dari Monserrat */
+  font-size: 22px;
+}
+
+/* bikin menu navbar jadi inline block dengan logo navbar */
+.main-nav {
+  display: inline-block;
+  text-align: right;
+  width: calc(
+    100% - 72px
+  ); /* 72 di dapat dari ukuran div logo (inspect element, kliik div di kodingan inspectnya, lalu akan muncul sizenya di tampilan webnya) */
+  vertical-align: middle;
+}
+
+.main-nav___items {
+  margin: 0;
+  padding: 0;
+  list-style: none; /*remove bullets point */
+}
+/* bikin menu list items navbar jadi inline block dan hilangkan dots */
+
+.main-nav___item {
+  display: inline-block;
+  margin: 0 16px;
+}
+
+.main-nav___item a {
+  text-decoration: none;
+  color: #0e4f1f;
+  font-weight: bold;
+  padding: 3px 0;
+}
+
+.main-nav___item a:hover,
+.main-nav___item a:active {
+  color: white;
+  border-bottom: 5px solid white;
+}
+
+.main-nav--cta {
+  margin-right: 0;
+}
+
+.main-nav--cta a {
+  color: white;
+  background: #ff1b68;
+  padding: 8px 16px;
+  border-radius: 8px;
+}
+
+.main-nav--cta a:hover,
+.main-nav--cta a:active {
+  color: #ff1b68;
+  background: white;
+  border: none;
+}
+
+.main-footer {
+  background-color: black;
+  padding: 32px;
+  margin-top: 48px;
+}
+
+.main-footer__links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.main-footer__link {
+  display: inline-block;
+  margin: 0 16px;
+}
+
+.main-footer__link a {
+  text-decoration: none;
+  color: white;
+}
+
+.main-footer__link a:hover,
+.main-footer__link a:active {
+  color: #ccc;
+}
+
+.button {
+  background-color: #0a3b17;
+  color: #fff;
+  font: inherit;
+  border: 1.5px solid #0a3b17;
+  padding: 8px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.button:hover,
+.button:active {
+  color: #0a3b17;
+  background-color: #fff;
+}
